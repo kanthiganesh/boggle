@@ -21,7 +21,7 @@ $branchErr3="";
 
 
 
-$cn = mysql_connect("localhost","root","password@123","test");
+$cn = mysqli_connect("localhost","root","password@123","test");
 if(isset($_POST['send1']))
 {
 
@@ -49,7 +49,7 @@ if(isset($_POST['send1']))
 	if($flag1===0)
 	{
 		$q="insert into contactus values('$n','$e','$m')";
-		mysql_query($cn,$q);
+		mysqli_query($cn,$q);
 		$note1="Submited successfully"."<br>";
 	}
 }
@@ -80,7 +80,7 @@ if(isset($_POST['send2']))
 	if($flag2===0)
 	{
 		$q="insert into contactus values('$n','$e','$m')";
-		mysql_query($cn,$q);
+		mysqli_query($cn,$q);
 		$note2="Submited successfully"."<br>";
 	}
 }
@@ -129,7 +129,7 @@ if(isset($_POST['submit']))
 	if($flag3==0)
 	{
 		$q="insert into recruite values('$name','$id','$branch','$topic','$campus','$email')";
-		mysql_query($cn,$q);
+		mysqli_query($cn,$q);
 
 		echo "<script type='text/javascript'>alert('Submitted successfully');</script>";
 
