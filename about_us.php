@@ -168,11 +168,7 @@
 
    </div>
 </div>
-  		<div class="copyright">
-    <div class="container">
-     <p>All Rights Reserved. Boggle Pvt Ltd@2017</p>
-   </div>
-</div>
+<?php include 'footer.php';?>
 
   		
   			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 

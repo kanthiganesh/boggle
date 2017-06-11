@@ -21,7 +21,7 @@ $branchErr3="";
 
 
 
-$cn = mysqli_connect("localhost","root","password@123","test");
+$cn = mysqli_connect("localhost","root","","test");
 if(isset($_POST['send1']))
 {
 
